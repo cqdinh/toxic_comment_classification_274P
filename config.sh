@@ -8,3 +8,4 @@ unzip jigsaw-toxic-comment-classification-challenge.zip
 unzip train.csv.zip
 unzip test.csv.zip
 unzip test_labels.csv.zip
+pip install transformers
