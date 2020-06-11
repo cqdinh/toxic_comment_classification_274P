@@ -10,3 +10,5 @@ unzip test.csv.zip
 unzip test_labels.csv.zip
 pip install transformers
 apt-get install nvidia-cuda-toolkit
+mkdir model
+mkdir adam
