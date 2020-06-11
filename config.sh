@@ -12,3 +12,4 @@ pip install transformers
 apt-get install nvidia-cuda-toolkit
 mkdir model
 mkdir adam
+mkdir logs
