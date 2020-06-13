@@ -102,10 +102,14 @@ if __name__ == "__main__":
     position_encoding_size = 256
     pos_embed = position_embeddings(10000, position_encoding_size)
 
+    load = (44, 1200, 0.0141)
+    
     bert_hidden_size = 768
+    bert_path = "./bert/bert_epoch_{:04d}_batch_{:04d}_bce_{:.04f}.pt".format(*load)
     bert = BertModel.from_pretrained('bert-base-cased')
+    bert.load_state_dict(torch.load(bert_path))
 
-    model_path = "./model/model_epoch_{:04d}_batch_{:04d}_bce_{:.04f}.pt".format(29, 100, 0.0629)
+    model_path = "./model/model_epoch_{:04d}_batch_{:04d}_bce_{:.04f}.pt".format(*load)
     model = Classifier(bert_hidden_size, position_encoding_size)
     model.load_state_dict(torch.load(model_path))
 
