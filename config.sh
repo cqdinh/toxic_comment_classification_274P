@@ -13,3 +13,4 @@ apt-get install nvidia-cuda-toolkit
 mkdir model
 mkdir adam
 mkdir logs
+mkdir bert
