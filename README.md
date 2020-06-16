@@ -1,5 +1,7 @@
 # toxic_comment_classification_274P
 
+A BERT-based model that achieves an average AUC of 0.959 on the [Jigsaw Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview) from Kaggle.
+
 To download data, run:
 
 `sudo setup.sh <kaggle username> <kaggle token>`
